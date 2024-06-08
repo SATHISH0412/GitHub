@@ -1,10 +1,12 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     box-sizing: border-box;
     margin: 0 auto;
+    
 }
 
 .navigation {
@@ -426,3 +428,29 @@ body {
 }
 
 /* -----------------------------------footer section---------------------------------- */
+
+.foot-ele {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-items {
+    max-height: 40px;
+    width: auto;
+    padding: 5px 10px;
+}
+
+@media (max-width:800px) {
+    .link-items{
+        max-height: 30px;
+    }
+    .foot-ele{
+        font-size: 10px;
+    }
+
+    .form-data{
+        font-size: calc(100% -5px);
+    }
+    
+}
